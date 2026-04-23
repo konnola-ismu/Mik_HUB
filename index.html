@@ -22,6 +22,7 @@
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
+                <a href="#contact">Contact</a>
                 <a href="https://www.instagram.com/mik__hub?igsh=MWhmcHZrejlreHBydA%3D%3D&utm_source=qr" target="_blank" class="btn-primary">Visit Instagram</a>
             </div>
         </div>
@@ -66,6 +67,33 @@
                     <h3>Latest Trends</h3>
                     <p>Stay ahead of the curve with our up-to-date features and dynamic showcases.</p>
                 </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container glass-card">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSd5gc3C_2sog1Hj9WvyjLSIpufk0DSfqFF3jR6Pw8GikK0wCA/formResponse" method="POST" target="hidden_iframe" id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="entry.2005620554" placeholder="Name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="entry.1065046570" placeholder="Place" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="entry.1045781291" placeholder="Email" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="entry.1166974658" placeholder="Mobile Number" required class="form-input" pattern="^\+?[0-9\s\-]{7,15}$" title="Please enter a valid mobile number. It can start with a + if needed.">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="entry.839337160" placeholder="Enquiry / Comments" required class="form-input" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary large submit-btn">Submit</button>
+                </form>
+                <div id="success-msg" class="success-msg" style="display: none;">Thank you! Your message has been sent.</div>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){document.getElementById('contactForm').style.display='none'; document.getElementById('success-msg').style.display='block';}"></iframe>
+                <script>var submitted=false;</script>
+                <script>document.getElementById('contactForm').addEventListener('submit', function() { submitted=true; });</script>
             </div>
         </section>
     </main>

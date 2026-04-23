@@ -348,6 +348,69 @@ footer {
     color: var(--accent-secondary);
 }
 
+/* Contact Section */
+.contact {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.contact-container {
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 15px 20px;
+    border-radius: 12px;
+    color: var(--text-primary);
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+textarea.form-input {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.success-msg {
+    text-align: center;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 20px;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
     .hero {

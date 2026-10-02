@@ -96,9 +96,9 @@
                     <button type="submit" class="btn-primary large submit-btn">Submit</button>
                 </form>
                 <div id="success-msg" class="success-msg" style="display: none;">Thank you! Your message has been sent.</div>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){document.getElementById('contactForm').style.display='none'; document.getElementById('success-msg').style.display='block';}"></iframe>
-                <script>var submitted=false;</script>
-                <script>document.getElementById('contactForm').addEventListener('submit', function() { submitted=true; });</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if (window.submitted) { document.getElementById('contactForm').style.display='none'; document.getElementById('success-msg').style.display='block'; }"></iframe>
+                <script>window.submitted = false;</script>
+                <script>document.getElementById('contactForm').addEventListener('submit', function() { window.submitted = true; });</script>
             </div>
         </section>
     </main>
@@ -109,7 +109,8 @@
                 <img src="assets/logo.png" alt="Mik HUB Logo">
                 <p>Mik HUB &copy; <span id="year"></span>. All rights reserved.</p>
             </div>
-            <div class="social-links">
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
                 <a href="https://www.instagram.com/mik__hub?igsh=MWhmcHZrejlreHBydA%3D%3D&utm_source=qr" target="_blank">Instagram</a>
             </div>
         </div>
